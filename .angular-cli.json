@@ -5,7 +5,6 @@
   },
   "apps": [
     {
-      "deployUrl": "https://andyfrontend.github.io/cryptofy/dist/",
       "root": "src",
       "outDir": "dist",
       "assets": [
