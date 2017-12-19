@@ -1,0 +1,25 @@
+<div class="container">
+  <h3 class="title-currencies" *ngIf="!loading">Siguiente actualización en: {{currentSecond}}</h3>
+  <div class="spinner" *ngIf="loading">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+  <div class="row" *ngIf="currencies">
+    <div class="col-md-6 col-lg-4 mb-4" *ngFor="let currency of currencies">
+      <div class="currency-content">
+        <div class="currency-name">
+          <img src="./assets/img/currency/{{currency.symbol | lowercase}}.png" alt="">
+          <div class="ml-2">
+            <h4>{{currency.symbol | uppercase}}</h4>
+            <p>{{currency.name}}</p>
+          </div>
+        </div>
+        <div class="currency-price">
+          <h4>{{currency.price_usd | currency}}</h4>
+          <p>{{currency.price_btc}} bitcoin</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
