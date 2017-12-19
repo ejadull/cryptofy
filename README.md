@@ -2,7 +2,7 @@
 
 > Thist's an Angular project
 
-[DEMO](https://github.com/andyfrontend/cryptofy/dist)
+[DEMO](https://andyfrontend.github.io/cryptofy/)
 
 ## Credits
 
